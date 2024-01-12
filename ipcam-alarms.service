@@ -1,0 +1,11 @@
+ipcam-alarms:
+[Unit]
+Description=ipcam-alarms
+
+[Service]
+RemainAfterExit=true
+ExecStart=/usr/local/bin/ipcam_alarms.sh
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
